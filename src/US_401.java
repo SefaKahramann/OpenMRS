@@ -60,7 +60,7 @@ public class US_401 extends BaseDriver {
 
     @DataProvider
     public Object[][] userData() {
-        Object[][] userPassword = {
+        return new Object[][] {
                 {"Ümmühan", "123457a", false},
                 {"Merve", "12dd7a", false},
                 {"Sefa", "1vvv57a", false},
@@ -68,6 +68,5 @@ public class US_401 extends BaseDriver {
                 {"Songül", "1abc7a", false},
                 {"Egemen", "Admin12", true},
         };
-        return userPassword;
     }
 }

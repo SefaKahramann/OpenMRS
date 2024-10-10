@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class US_405 extends BaseDriver {
 
-    @Test(groups = "Smoke Test")
+    @Test(groups = "Smoke Test",dependsOnMethods = "US_402")
     public void myAccount() {
         US_402_405_POM element = new US_402_405_POM();
         Actions action=new Actions(driver);

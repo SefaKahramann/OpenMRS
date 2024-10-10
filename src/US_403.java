@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class US_403 extends BaseDriver {
 
-    @Test(groups = "Smoke Test")
+    @Test(groups = "Smoke Test",dependsOnMethods = "US_402")
     public void logOut() {
         US_403_409_410_POM element = new US_403_409_410_POM();
 

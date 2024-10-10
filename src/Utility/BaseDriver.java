@@ -1,7 +1,5 @@
 package Utility;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -15,7 +13,6 @@ import java.time.Duration;
 public class BaseDriver {
     public static WebDriver driver;
     public WebDriverWait wait;
-    public static Logger logger= LogManager.getLogger();
 
     @BeforeClass
     public void setUp(){

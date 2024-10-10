@@ -11,7 +11,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class US_404 extends BaseDriver {
     public String patientID;
 
-    @Test(groups = "Regression Test")
+    @Test(groups = "Regression Test",dependsOnMethods = "US_402")
     public void patientRegistration() {
         US_401_404_407_POM locator = new US_401_404_407_POM();
 

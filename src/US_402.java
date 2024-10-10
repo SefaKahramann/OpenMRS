@@ -1,4 +1,4 @@
-import Pages.US_402_405_POM;
+import Pages.US_402_405_406_POM;
 
 import Utility.BaseDriver;
 import Utility.ConfigReader;
@@ -12,7 +12,7 @@ public class US_402 extends BaseDriver {
 
     @Test(dataProvider = "userPassword",groups = "Smoke Test")
     public void loginPositive(String username, String password, boolean expectedResult) {
-        US_402_405_POM element = new US_402_405_POM();
+        US_402_405_406_POM element=new US_402_405_406_POM();
 
         do {
             if (!element.languageButton.getText().contains("EN")) {

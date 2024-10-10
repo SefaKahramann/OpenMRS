@@ -1,4 +1,5 @@
-import Pages.US_402_405_POM;
+import Pages.US_402_405_406_POM;
+
 import Utility.BaseDriver;
 import Utility.ConfigReader;
 import Utility.MyFunc;
@@ -11,7 +12,7 @@ public class US_405 extends BaseDriver {
 
     @Test(groups = "Smoke Test")
     public void myAccount() {
-        US_402_405_POM element = new US_402_405_POM();
+        US_402_405_406_POM element=new US_402_405_406_POM();
         Actions action=new Actions(driver);
 
         wait.until(ExpectedConditions.urlToBe(ConfigReader.getProperty("URL")));

@@ -10,9 +10,6 @@ public class US_406_408_POM extends BaseDriver {
     public US_406_408_POM(){
         PageFactory.initElements(BaseDriver.driver, this);}
 
-    String surName="Hostert";
-    String ID="100 HTR";
-
     @FindBy(id = "username")
     public WebElement username;
 
@@ -31,11 +28,6 @@ public class US_406_408_POM extends BaseDriver {
     @FindBy(xpath = "//input[@id='patient-search']")
     public WebElement name;
 
-    @FindBy(xpath = "//input[@class='form-control']")
-    public WebElement surname;
-
     @FindBy(xpath ="//td[text()='No matching records found']")
     public WebElement text;
-
-
 }

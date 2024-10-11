@@ -15,11 +15,5 @@
             <class name="US_408"></class>
             <class name="US_410"></class>
         </classes>
-        <groups>
-            <run>
-                <include name="Smoke Test"></include>
-                <include name="Regression Test"></include>
-            </run>
-        </groups>
     </test>
 </suite>

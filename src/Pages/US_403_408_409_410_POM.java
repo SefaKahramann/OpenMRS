@@ -43,7 +43,7 @@ public class US_403_408_409_410_POM {
     @FindBy(css = "[class='nav-item logout']>a")
     public WebElement logOutBtn;
 
-    @FindBy(xpath = "(//div[@id='content']//a)[5]")
+    @FindBy(xpath = "(//div[@id='content']//a)[7]")
     public WebElement appointmentSchedulingBtn;
 
     @FindBy(xpath = "(//div[@id='apps']//a)[3]")

@@ -24,7 +24,6 @@ public class BaseDriver {
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-        driver.get(ConfigReader.getProperty("URL"));
     }
 
     @AfterClass

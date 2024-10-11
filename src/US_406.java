@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class US_406 extends BaseDriver {
-    @Test
+    @Test(groups = "Regression Test")
     public void patientSearchInPatientListNegative(){
         US_402_405_406_POM element = new US_402_405_406_POM();
 

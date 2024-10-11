@@ -18,14 +18,7 @@
 ## Features Tested
 ### The following user stories are tested in this project:
 
-Sure! Here’s a template for a README file suitable for a GitHub repository:
-
 # OpenMRS User Stories
-
-## Overview
-This repository contains user stories for the OpenMRS project. User stories describe the features and functionalities from the perspective of end-users, helping guide the development process.
-
-## User Stories
 
 ### US_401: Check Login Errors
 *As a user*, I want to see warning messages for invalid login attempts to enhance application security.
@@ -61,7 +54,7 @@ This repository contains user stories for the OpenMRS project. User stories desc
 
 - #### Domain:  [openmrs.com](https://openmrs.org/).
 
-- #### Supported browsers: [Chrome](), [Safari](), [Firefox]()
+- #### Supported browsers: [Chrome](), [Edge](), [Firefox]()
 
 ## Technologies and Tools Used
 

@@ -6,8 +6,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.ThreadLocalRandom;
-
 public class US_404 extends BaseDriver {
     public String patientID;
 
@@ -68,43 +66,20 @@ public class US_404 extends BaseDriver {
         wait.until(ExpectedConditions.elementToBeClickable(locator.nextButton));
         locator.nextButton.click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(locator.address));
-        locator.address.sendKeys(ConfigReader.getProperty("address"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(locator.city));
-        locator.city.sendKeys(ConfigReader.getProperty("city"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(locator.state));
-        locator.state.sendKeys(ConfigReader.getProperty("state"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(locator.country));
-        locator.country.sendKeys(ConfigReader.getProperty("country"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(locator.postalCode));
-        locator.postalCode.sendKeys(ConfigReader.getProperty("postalCode"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(locator.nextButton));
-        locator.nextButton.click();
-
-        long random = ThreadLocalRandom.current().nextLong(10000000000L, 100000000000L);
-        String phoneNumber = String.valueOf(random);
-        wait.until(ExpectedConditions.elementToBeClickable(locator.phoneNumber));
-        locator.phoneNumber.sendKeys(phoneNumber);
-
-        wait.until(ExpectedConditions.elementToBeClickable(locator.nextButton));
-        locator.nextButton.click();
-
-        Select relationship = new Select(locator.selectRelatives);
-        relationship.selectByIndex((int) (Math.random() * 9));
-
-        wait.until(ExpectedConditions.elementToBeClickable(locator.personName));
-        locator.personName.sendKeys(ConfigReader.getProperty("personName"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(locator.nextButton));
-        locator.nextButton.click();
-
         wait.until(ExpectedConditions.elementToBeClickable(locator.confirmButton));
         locator.confirmButton.click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(locator.findPatientButton));
+        locator.findPatientButton.click();
+
+        wait.until(ExpectedConditions.visibilityOf(locator.findPatientPageControl));
+        Assert.assertTrue(locator.findPatientPageControl.getText().contains("Find Patient"));
+
+        wait.until(ExpectedConditions.elementToBeClickable(locator.searchBox));
+        locator.searchBox.sendKeys(ConfigReader.getProperty("usernameSecond"));
+
+        wait.until(ExpectedConditions.elementToBeClickable(locator.patientInformation));
+        locator.patientInformation.click();
 
         wait.until(ExpectedConditions.visibilityOf(locator.givenControl));
         Assert.assertTrue(locator.givenControl.isDisplayed());

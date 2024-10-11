@@ -42,11 +42,11 @@ public class US_408 extends BaseDriver {
         boolean isNextPageAvailable = true;
         do {
             for (WebElement ids : element.IDs) {
-                String patientsIdStr=(ids.getText());
+                String patientsIdStr = (ids.getText());
                 if (!patientsId.contains(patientsIdStr)) {
                     patientsId.add(patientsIdStr);
-                }else {
-                    isNextPageAvailable =false;
+                } else {
+                    isNextPageAvailable = false;
                 }
             }
 

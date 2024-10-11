@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class US_409 extends BaseDriver {
 
     @Test(groups = "Regression Test")
-    public void patientMerge(){
+    public void patientMerge() {
         US_403_408_409_410_POM element = new US_403_408_409_410_POM();
 
         driver.get(ConfigReader.getProperty("loginURL"));
@@ -42,11 +42,11 @@ public class US_409 extends BaseDriver {
         element.searchByName.sendKeys(ConfigReader.getProperty("given"));
 
         wait.until(ExpectedConditions.visibilityOf(element.patientSearchResultTable));
-        WebElement[] IDs={element.patientId1,element.patientId2};
-        for (int i = 0; i <element.IDs.size(); i++) {
+        WebElement[] IDs = {element.patientId1, element.patientId2};
+        for (int i = 0; i < element.IDs.size(); i++) {
             wait.until(ExpectedConditions.visibilityOf(element.IDs.get(i)));
             IDs[i].sendKeys(element.IDs.get(i).getText());
-            if (i==1){
+            if (i == 1) {
                 IDs[i].sendKeys(Keys.ENTER);
             }
         }
@@ -63,8 +63,8 @@ public class US_409 extends BaseDriver {
         wait.until(ExpectedConditions.elementToBeClickable(element.yesContinueBtn));
         element.yesContinueBtn.click();
 
-        int randomIDsControl=(int)(Math.random()*element.IDsControl.size());
-        String randomIdsControlStr=element.IDsControl.get(randomIDsControl).getText();
+        int randomIDsControl = (int) (Math.random() * element.IDsControl.size());
+        String randomIdsControlStr = element.IDsControl.get(randomIDsControl).getText();
 
         wait.until(ExpectedConditions.visibilityOf(element.IDsControl.get(randomIDsControl)));
         Assert.assertTrue(element.IDsControl.get(randomIDsControl).getText().contains(randomIdsControlStr));

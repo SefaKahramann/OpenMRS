@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class US_406 extends BaseDriver {
     @Test(groups = "Regression Test")
-    public void patientSearchInPatientListNegative(){
+    public void patientSearchInPatientListNegative() {
         US_402_405_406_POM element = new US_402_405_406_POM();
 
         driver.get(ConfigReader.getProperty("loginURL"));
@@ -36,7 +36,7 @@ public class US_406 extends BaseDriver {
         Assert.assertTrue(element.findPatientRecord.getText().contains("Patient Record"));
 
         wait.until(ExpectedConditions.elementToBeClickable(element.searchBox));
-        element.searchBox.sendKeys(ConfigReader.getProperty("samplePatientName")+ Keys.ENTER);
+        element.searchBox.sendKeys(ConfigReader.getProperty("samplePatientName") + Keys.ENTER);
 
         wait.until(ExpectedConditions.visibilityOf(element.noPatientsFound));
         Assert.assertTrue(element.noPatientsFound.getText().contains("No matching"));

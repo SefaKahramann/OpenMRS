@@ -1,5 +1,4 @@
 import Pages.US_402_405_406_POM;
-
 import Utility.BaseDriver;
 import Utility.ConfigReader;
 import Utility.MyFunc;
@@ -10,9 +9,9 @@ import org.testng.annotations.Test;
 
 public class US_402 extends BaseDriver {
 
-    @Test(dataProvider = "userPassword",groups = "Smoke Test")
+    @Test(dataProvider = "userPassword", groups = "Smoke Test")
     public void loginPositive(String username, String password, boolean expectedResult) {
-        US_402_405_406_POM element=new US_402_405_406_POM();
+        US_402_405_406_POM element = new US_402_405_406_POM();
 
         driver.get(ConfigReader.getProperty("URL"));
 
@@ -39,7 +38,7 @@ public class US_402 extends BaseDriver {
         wait.until(ExpectedConditions.elementToBeClickable(element.enterOpenMRSDemo));
         element.enterOpenMRSDemo.click();
 
-        if (element.loginText.isDisplayed()){
+        if (element.loginText.isDisplayed()) {
             wait.until(ExpectedConditions.visibilityOf(element.username));
             element.username.sendKeys(username);
 
@@ -55,8 +54,7 @@ public class US_402 extends BaseDriver {
 
         if (!expectedResult) {
             Assert.assertTrue(element.errorMessage.getText().contains("Please try again."));
-        }
-        else {
+        } else {
             Assert.assertTrue(element.loginControl.getText().contains("Logged in as Super User"));
         }
 
@@ -74,7 +72,7 @@ public class US_402 extends BaseDriver {
                 {"Serkan", "Team64", false},
                 {"Abdulkerim", "Team65", false},
                 {"Nigar", "Team66", false},
-                {ConfigReader.getProperty("username"),ConfigReader.getProperty("password"), true}
+                {ConfigReader.getProperty("username"), ConfigReader.getProperty("password"), true}
         };
         return userData;
     }

@@ -34,7 +34,7 @@ public class US_410 extends BaseDriver {
         element.findPatient.click();
 
         int randomPatientIds = (int) (Math.random() * element.IDs.size());
-        String patientIds = element.IDs.get(randomPatientIds).getText().replace("Recent","").trim();
+        String patientIds = element.IDs.get(randomPatientIds).getText().replace("Recent", "").trim();
 
         wait.until(ExpectedConditions.elementToBeClickable(element.pageBackHome));
         element.pageBackHome.click();

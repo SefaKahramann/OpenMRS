@@ -58,7 +58,7 @@ public class US_403_408_409_410_POM {
     @FindBy(id = "time-zone-warning")
     public WebElement timeZoneWarning;
 
-    @FindBy(xpath = "(//div[@id='content']//a)[7]")
+    @FindBy(xpath = "(//div[@id='content']//a)[9]")
     public WebElement dataManagementBtn;
 
     @FindBy(xpath = "//div[@id='tasks']//a")

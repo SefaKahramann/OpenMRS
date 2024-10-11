@@ -78,4 +78,19 @@ public class US_402_405_406_POM extends BaseDriver {
 
     @FindBy(id = "patient-search")
     public WebElement searchBox;
+
+    @FindBy(xpath = "//span[text()='100K34']")
+    public WebElement controlID;
+
+    @FindBy(css = "[class='PersonName-givenName']")
+    public WebElement givenNameControl;
+
+    @FindBy(css = "[class='PersonName-middleName']")
+    public WebElement middleNameControl;
+
+    @FindBy(css = "[class='PersonName-familyName']")
+    public WebElement familyNameControl;
+
+    @FindBy(xpath = "//*[.='No matching records found']")
+    public WebElement  noPatientsFound;
 }

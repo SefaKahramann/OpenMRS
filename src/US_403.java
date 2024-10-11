@@ -12,6 +12,7 @@ public class US_403 extends BaseDriver {
     public void logOut() {
         US_403_408_409_410_POM element = new US_403_408_409_410_POM();
 
+        driver.get(ConfigReader.getProperty("URL"));
         wait.until(ExpectedConditions.urlToBe(ConfigReader.getProperty("URL")));
 
         do {

@@ -14,6 +14,8 @@ public class US_402 extends BaseDriver {
     public void loginPositive(String username, String password, boolean expectedResult) {
         US_402_405_406_POM element=new US_402_405_406_POM();
 
+        driver.get(ConfigReader.getProperty("URL"));
+
         do {
             if (!element.languageButton.getText().contains("EN")) {
                 wait.until(ExpectedConditions.elementToBeClickable(element.languageButton));

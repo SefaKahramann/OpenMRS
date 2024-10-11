@@ -13,6 +13,8 @@ public class US_401 extends BaseDriver {
     public void checkingLoginErrorsSystem(String username, String password, boolean expectedResult) {
         US_401_404_407_POM locators = new US_401_404_407_POM();
 
+        driver.get(ConfigReader.getProperty("URL"));
+
         do {
             if (!locators.languageButton.getText().contains("EN")) {
                 wait.until(ExpectedConditions.elementToBeClickable(locators.languageButton));

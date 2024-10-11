@@ -15,7 +15,9 @@ public class US_405 extends BaseDriver {
         US_402_405_406_POM element=new US_402_405_406_POM();
         Actions action=new Actions(driver);
 
+        driver.get(ConfigReader.getProperty("URL"));
         wait.until(ExpectedConditions.urlToBe(ConfigReader.getProperty("URL")));
+
         do {
             if (!element.languageButton.getText().contains("EN")) {
                 wait.until(ExpectedConditions.elementToBeClickable(element.languageButton));

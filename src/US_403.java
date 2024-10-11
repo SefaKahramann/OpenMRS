@@ -1,4 +1,4 @@
-import Pages.US_403_409_410_POM;
+import Pages.US_403_408_409_410_POM;
 import Utility.BaseDriver;
 import Utility.ConfigReader;
 import Utility.MyFunc;
@@ -10,7 +10,7 @@ public class US_403 extends BaseDriver {
 
     @Test(groups = "Smoke Test",dependsOnMethods = "US_402")
     public void logOut() {
-        US_403_409_410_POM element = new US_403_409_410_POM();
+        US_403_408_409_410_POM element = new US_403_408_409_410_POM();
 
         wait.until(ExpectedConditions.urlToBe(ConfigReader.getProperty("URL")));
 

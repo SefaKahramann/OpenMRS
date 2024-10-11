@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class US_403_409_410_POM {
+public class US_403_408_409_410_POM {
 
-    public US_403_409_410_POM() {
+    public US_403_408_409_410_POM() {
         PageFactory.initElements(BaseDriver.driver,this);
     }
 
@@ -94,7 +94,13 @@ public class US_403_409_410_POM {
     @FindBy(xpath = "(//div[@id='content']//a)[1]")
     public WebElement findPatient;
 
+    @FindBy(linkText = "Next")
+    public WebElement nextBtn;
+
     @FindBy(css = "i[class='icon-home small']")
     public WebElement pageBackHome;
+
+    @FindBy(id = "patient-search-results-table_info")
+    public WebElement searchResultTable;
 
 }

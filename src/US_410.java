@@ -1,4 +1,4 @@
-import Pages.US_403_409_410_POM;
+import Pages.US_403_408_409_410_POM;
 import Utility.BaseDriver;
 import Utility.ConfigReader;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,7 +9,7 @@ public class US_410 extends BaseDriver {
 
     @Test(groups = "Regression Test" ,dependsOnMethods = "US_402")
     public void wrongTimeZone() {
-        US_403_409_410_POM element = new US_403_409_410_POM();
+        US_403_408_409_410_POM element = new US_403_408_409_410_POM();
 
         driver.get(ConfigReader.getProperty("loginURL"));
 

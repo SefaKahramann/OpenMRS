@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class US_409 extends BaseDriver {
 
-    @Test(groups = "Regression Test",dependsOnMethods = "US_402")
+    @Test(groups = "Regression Test")
     public void patientMerge(){
         US_403_408_409_410_POM element = new US_403_408_409_410_POM();
 

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class US_404 extends BaseDriver {
     public String patientID;
 
-    @Test(groups = "Regression Test",dependsOnMethods = "US_402")
+    @Test(groups = "Regression Test")
     public void patientRegistration() {
         US_401_404_407_POM locator = new US_401_404_407_POM();
 

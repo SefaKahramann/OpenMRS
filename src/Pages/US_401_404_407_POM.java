@@ -88,30 +88,6 @@ public class US_401_404_407_POM {
     @FindBy(name = "birthdateYear")
     public WebElement birtdateYear;
 
-    @FindBy(id = "address1")
-    public WebElement address;
-
-    @FindBy(id = "cityVillage")
-    public WebElement city;
-
-    @FindBy(id = "stateProvince")
-    public WebElement state;
-
-    @FindBy(id = "country")
-    public WebElement country;
-
-    @FindBy(id = "postalCode")
-    public WebElement postalCode;
-
-    @FindBy(name = "phoneNumber")
-    public WebElement phoneNumber;
-
-    @FindBy(id = "relationship_type")
-    public WebElement selectRelatives;
-
-    @FindBy(css = "[placeholder='Person Name'] ")
-    public WebElement personName;
-
     @FindBy(id = "submit")
     public WebElement confirmButton;
 
@@ -129,9 +105,6 @@ public class US_401_404_407_POM {
 
     @FindBy(xpath = "(//tr[@class='odd']//td)[1]")
     public WebElement patientInformation;
-
-    @FindBy(xpath = "[id='breadcrumbs'] > :nth-child(2)")
-    public WebElement patientVerification;
 
     @FindBy(id = "org.openmrs.module.coreapps.deletePatient")
     public WebElement deletePatient;

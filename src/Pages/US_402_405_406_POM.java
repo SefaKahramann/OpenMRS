@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class US_402_405_406_POM extends BaseDriver {
+public class US_402_405_406_POM{
 
     public US_402_405_406_POM() {
         PageFactory.initElements(BaseDriver.driver, this);

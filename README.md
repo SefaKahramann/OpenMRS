@@ -18,45 +18,44 @@
 ## Features Tested
 ### The following user stories are tested in this project:
 
-### 1- **Checking Login Errors System - (US_401)**
+Sure! Here’s a template for a README file suitable for a GitHub repository:
 
-#### Users are responsible for their actions. Implementing a warning message for incorrect login attempts would enhance security.
+# OpenMRS User Stories
 
-### 2- **Login Positive - (US_402)**
+## Overview
+This repository contains user stories for the OpenMRS project. User stories describe the features and functionalities from the perspective of end-users, helping guide the development process.
 
-#### Users, access to the system is desired to take advantage of the application's features.
+## User Stories
 
-### 3- **LogOut - (US_403)**
+### US_401: Check Login Errors
+*As a user*, I want to see warning messages for invalid login attempts to enhance application security.
 
-#### Users, secure logout from the system is desired to ensure that the application is not left open.
+### US_402: Login to the System
+*As a user*, I want to log into the system to access its features.
 
-### 4- **Patient Registration- (US_404)**
+### US_403: Logout from the System
+*As a user*, I want to securely log out of the system to ensure my session is closed.
 
-#### Users, the ability to enter information and register patients in the system is essential. This way, there is no need for another application when patient information is required.
+### US_404: Patient Registration
+*As a user*, I want to register a patient by entering their information, so I can access it later.
 
-### 5- **My Account- (US_405)**
+### US_405: My Account
+*As a user*, I want a link to my account settings on the homepage for quick access.
 
-#### Users, there should be an icon or link on the homepage that provides access to account settings. This way, users can quickly reach their account-related configurations.
+### US_406: Search in Patient List
+*As a doctor*, I want to search for patients by name or ID to treat them.
 
-### 6- **Search the Patient List - (US_406)**
+### US_407: Delete Patient
+*As a doctor*, I want to delete a patient from the system to protect their privacy.
 
-#### As a doctor, the ability to list patients, search for a specific patient by name or ID, and access their information is important for providing treatment.
+### US_408: List Patients
+*As a doctor*, I want to list all patients for better planning.
 
-### 7- **Patient Deletion - (US_407)** 
+### US_409: Merge Patient Records
+*As a doctor*, I want to merge two patient records for easier management.
 
-#### As a doctor, the ability to delete a patient from the system is necessary to protect the confidentiality of their information.
-
-### 8- **Patient List- (US_408)**
-
-#### As a doctor, the ability to list all patients is essential for more effective planning.
-
-### 8- **Patient Merge- (US_409)**
-
-#### As a doctor, the ability to merge any two patient records previously entered is important for facilitating easier prescription management.
-
-### 8- **Wrong Time Zone- (US_410)**
-
-#### Users, the ability to see an error message when the system clock is set to a time outside of GMT+0 while creating a patient appointment is essential.
+### US_410: Appointment Scheduling Error
+*As a user*, I want to see an error message when the system time is set outside GMT+0 during appointment scheduling.
 
 ## Team6 Practice Project
 

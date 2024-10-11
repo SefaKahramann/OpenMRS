@@ -18,8 +18,6 @@
 ## Features Tested
 ### The following user stories are tested in this project:
 
-# OpenMRS User Stories
-
 ### US_401: Check Login Errors
 *As a user*, I want to see warning messages for invalid login attempts to enhance application security.
 
@@ -52,7 +50,7 @@
 
 ## Team6 Practice Project
 
-- #### Domain:  [openmrs.com](https://openmrs.org/).
+- #### Domain:  [openmrs.com](https://openmrs.org/)
 
 - #### Supported browsers: [Chrome](), [Edge](), [Firefox]()
 

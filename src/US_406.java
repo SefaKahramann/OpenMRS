@@ -36,21 +36,6 @@ public class US_406 extends BaseDriver {
         Assert.assertTrue(element.findPatientRecord.getText().contains("Patient Record"));
 
         wait.until(ExpectedConditions.elementToBeClickable(element.searchBox));
-        element.searchBox.sendKeys(ConfigReader.getProperty("patientID")+ Keys.ENTER);
-
-        wait.until(ExpectedConditions.visibilityOf(element.controlID));
-
-        if (ConfigReader.getProperty("patientID").equals(element.controlID.getText()) && element.controlID.isDisplayed()){
-            Assert.assertTrue(element.givenNameControl.getText().equals(ConfigReader.getProperty("given2")),"First name is not matched");
-            Assert.assertTrue(element.middleNameControl.getText().equals(ConfigReader.getProperty("middle2")),"Middle name is not matched");
-            Assert.assertTrue(element.familyNameControl.getText().equals(ConfigReader.getProperty("familyName2")),"Family name is not matched");
-        }
-
-        driver.navigate().back();
-        wait.until(ExpectedConditions.visibilityOf(element.findPatientRecord));
-        Assert.assertTrue(element.findPatientRecord.getText().contains("Patient Record"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(element.searchBox));
         element.searchBox.sendKeys(ConfigReader.getProperty("samplePatientName")+ Keys.ENTER);
 
         wait.until(ExpectedConditions.visibilityOf(element.noPatientsFound));

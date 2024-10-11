@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="My Suit">
+    <test name="My Test 1">
+        <classes>
+            <class name="US_401"></class>
+            <class name="US_402"></class>
+            <class name="US_405"></class>
+            <class name="US_403"></class>
+            <class name="US_404"></class>
+            <class name="US_404"></class>
+            <class name="US_406"></class>
+            <class name="US_409"></class>
+            <class name="US_407"></class>
+            <class name="US_408"></class>
+            <class name="US_410"></class>
+        </classes>
+        <groups>
+            <run>
+                <include name="Regression Test"></include>
+            </run>
+        </groups>
+    </test>
+</suite>
